@@ -1,24 +1,21 @@
-# Deploy React App to Netlify
+# Deploy the App to Netlify
 
 Create reusable deploy script for deploying the app to **Netlify** using best practices:
 
-1. A `netlify.toml` configuration file that:
-   - Defines the build command as `npm run build`
-   - Sets the publish directory to `build`
-   - Includes a `[dev]` section so `npm start` works locally with Netlify Dev
-   - Uses port `3000`
+## Tasks
 
-2. A reusable shell script `deploy.sh` that:
-   - Runs `npm run build`
-   - Deploys the `build` folder to Netlify with `--prod`
-   - Adds a commit message with a timestamp
-   - Is executable (`chmod +x deploy.sh`)
+[ ] 1.0 A `netlify.toml` configuration file that:
+  [ ] 1.1 Defines the deploy command
+  [ ] 1.2 Sets the publish build directory
 
-3. Add a new script in `package.json` to run the deploy process
+[ ] 2.0 A reusable shell script `deploy.sh` that:
+  [ ] 2.1 Runs the deploy command
+  [ ] 2.2 Deploys the build directory to Netlify with `--prod`
+  [ ] 2.3 Adds a commit message with a timestamp
+  [ ] 2.4 Is executable (`chmod +x deploy.sh`)
 
-4. Clear instructions on (add to `README.md` file):
-   - Installing the Netlify CLI
-   - Running the script to deploy
-   - Setting up CI/CD via GitHub if I want automated deploys
+[ ] 3.0 Add a new script in the `package.json` to run the deploy process
 
-Make the output production-ready, clean, and minimal.
+[ ] 4.0 Clear instructions on (add to `README.md` file):
+  [ ] 4.1 Installing the Netlify CLI
+  [ ] 4.2 Running the script to deploy
